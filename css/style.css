@@ -2520,3 +2520,147 @@ ol {
         padding: 30px;
     }
 }
+
+/* Container biểu tượng giỏ hàng */
+.cart-box {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  background-color: #d69860;  /* màu đỏ cam bắt mắt */
+  padding: 8px 14px;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(255, 111, 97, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-box:hover {
+  background-color: #d69860;
+  box-shadow: 0 6px 12px rgba(255, 59, 32, 0.6);
+}
+
+/* Icon giỏ hàng */
+.cart-box i.fa-shopping-cart {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+/* Số lượng sản phẩm trong giỏ */
+.cart-count {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: #fff;
+  color: #d69860;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+  padding: 3px 7px;
+  box-shadow: 0 0 4px rgba(255, 59, 32, 0.7);
+  min-width: 20px;
+  text-align: center;
+  line-height: 1;
+  pointer-events: none;
+}
+
+    /* CSS riêng cho trang Booking */
+    .booking-form-section {
+        padding: 80px 0;
+        background-color: #f9f9f9;
+    }
+
+    .booking-form-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .booking-form-container h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+    }
+
+    .booking-form-container .form-group {
+        margin-bottom: 20px;
+    }
+
+    .booking-form-container label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #555;
+    }
+
+    .booking-form-container input[type="text"],
+    .booking-form-container input[type="email"],
+    .booking-form-container input[type="tel"],
+    .booking-form-container select {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
+
+    .booking-form-container .form-group .date-input {
+        position: relative;
+    }
+    .booking-form-container .form-group .date-input i {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #aaa;
+        pointer-events: none; /* Make icon non-clickable so click passes to input */
+    }
+
+    .booking-form-container .site-btn {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: #d69860; /* Màu cam tương tự nút Booking Now */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-transform: uppercase;
+    }
+
+    .booking-form-container .site-btn:hover {
+        background-color: #d69860;
+    }
+
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: none; /* Hidden by default */
+    }
+
+    .alert-success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+
+    .alert-danger {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
